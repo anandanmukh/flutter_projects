@@ -10,25 +10,20 @@
 
 
 # Visuals
-
-### Homepage "Packages" Page Design Visual
-<img src="assets/screenshots/homescreen.png" alt="Home Screen Image" width="300" height="620">
-
-### Homepage "Hotels" Page Design Visual 
-<img src="assets/screenshots/homescreen_task_add.png" alt="Profile-Page Image" width="300" height="620">
+![task_topia_ui](https://github.com/anandanmukh/flutter_projects/assets/67072228/861ed7a1-c0fb-4c12-b9a0-bba5f9df4b5f)
 
 
 # About
 
-- Trail Trekkers is a travel app
-- The app helps users to plan their trips
-- The app provides a one-stop solution for all travel needs
-Users can book flights, hotels, and packages through the app
-- The app provides a list of places to visit in the city users are traveling to
-- The app also provides a list of restaurants in the city users are traveling to
+- Task Topia is a straightforward and easy-to-use to-do list.
+- Users can easily add and organize tasks in the app.
+- The app provides a simple interface to view and check off completed tasks.
+- The app does not have any extra or unnecessary features, keeping it focused on its core functionality.
+- Users can customize the appearance and layout of the app to fit their preferences.
+- The app provides a reliable and effective way to manage daily tasks and increase productivity.
 
 ## UI Design Idea
-- Trail Trekkers features a clean and visually appealing design.
+- Task Topia features a clean and visually appealing design.
 - User experience was a top priority in the design process.
 - User testing was conducted to gather feedback and improve the design.
 - The app incorporates animations and other interactive elements for a more engaging user experience.
