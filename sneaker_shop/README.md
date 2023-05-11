@@ -1,4 +1,4 @@
-# Trail Trekkers
+# SNEAKER SHOP
 
 ## Table of Contents
 
