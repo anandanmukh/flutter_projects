@@ -10,6 +10,7 @@
 
 
 # Visuals
+![sneaker_store](https://github.com/anandanmukh/flutter_projects/assets/67072228/f6006208-8944-4791-bf36-82ca7946802d)
 
 
 ## UI Design Idea
