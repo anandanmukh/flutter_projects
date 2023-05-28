@@ -14,6 +14,11 @@
 
 
 ## UI Design Idea
+<h2 align=center> Tech Stack 🔥 </h2>  
+  <p align="center">
+  <img src="https://img.shields.io/badge/dart-%230175C2.svg?&style=for-the-badge&logo=dart&logoColor=white"/> <img src="https://img.shields.io/badge/Flutter%20-%2302569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white" /> <img src="https://img.shields.io/badge/dribble%20-%23F24E1E.svg?&style=for-the-badge&logo=dribble&logoColor=white"/>  <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
+   <img src="https://img.shields.io/badge/canva%20-%23F24E1E.svg?&style=for-the-badge&logo=canva&logoColor=white"/>
+
 - This Sneaker Shop features a clean and visually appealing design.
 - User experience was a top priority in the design process.
 - User testing was conducted to gather feedback and improve the design.
