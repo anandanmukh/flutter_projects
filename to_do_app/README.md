@@ -44,7 +44,7 @@ Download the APK file from the Google Drive link provided and install it directl
 
 To install the app on your device, follow these steps:
 
-- Google Drive link: https://drive.google.com/drive/folders/13DNUQ8rgiivjc4KmW6Ny6hENUCbptluk?usp=share_link
+- Google Drive [link](https://drive.google.com/drive/folders/13DNUQ8rgiivjc4KmW6Ny6hENUCbptluk?usp=share_link)
 - Enable "Unknown Sources" in your device's settings.
 - Tap on the downloaded APK file to install the app.
 - Open the app and enjoy!
