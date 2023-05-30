@@ -10,6 +10,7 @@
 
 
 # Visuals
+![frenzy_name_generator_ui](https://github.com/anandanmukh/flutter_projects/assets/67072228/e49fac54-4fc1-4d55-a2e0-3c3d8932e16d)
 
 
 # About
