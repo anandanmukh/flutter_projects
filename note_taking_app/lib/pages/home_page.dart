@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:note_taking_app/models/note_data.dart';
 import 'package:provider/provider.dart';
 
+import '../models/note.dart';
+import 'editing_note_page.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -12,7 +15,27 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   // create a new note
-  void createNewNote() {}
+  void createNewNote() {
+    // create a new id
+    int id = Provider.of<NoteData>(context, listen: false).getAllNotes().length;
+    // create a blank note
+    Note newNote = Note(
+      id: id,
+      text: '',
+    );
+
+    // go to edit the note
+    goToNotePage();
+  }
+
+  // go to note editing page
+  void goToNotePage(Note note, bool isNewNote) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => EditingNotePage(),
+        ));
+  }
 
   @override
   Widget build(BuildContext context) {
