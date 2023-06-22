@@ -25,16 +25,25 @@ class _HomePageState extends State<HomePage> {
     );
 
     // go to edit the note
-    goToNotePage();
+    goToNotePage(newNote, true);
   }
 
   // go to note editing page
   void goToNotePage(Note note, bool isNewNote) {
     Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => EditingNotePage(),
-        ));
+      context,
+      MaterialPageRoute(
+        builder: (context) => EditingNotePage(
+          note: note,
+          isNewNote: false,
+        ),
+      ),
+    );
+
+    // delete the note
+    void deleteNote(Note note) {
+      Provider.of<NoteData>(context, listen: false).deleteNode(note);
+    }
   }
 
   @override
