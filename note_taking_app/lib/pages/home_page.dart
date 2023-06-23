@@ -78,7 +78,9 @@ class _HomePageState extends State<HomePage> {
               children: List.generate(
                 value.getAllNotes().length,
                 (index) => CupertinoListTile(
-                    title: Text(value.getAllNotes()[index].text)),
+                  title: Text(value.getAllNotes()[index].text),
+                  onTap: () => goToNotePage(value.getAllNotes()[index], false),
+                ),
               ),
             )
           ],
