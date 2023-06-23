@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quill/flutter_quill.dart';
 import 'package:provider/provider.dart';
-
 import '../models/note.dart';
 import '../models/note_data.dart';
 
-// ignore: must_be_immutable
 class EditingNotePage extends StatefulWidget {
-  Note note;
-  bool isNewNote;
+  final Note note;
+  final bool isNewNote;
   EditingNotePage({super.key, required this.note, required this.isNewNote});
 
   @override
@@ -34,7 +32,10 @@ class _EditingNotePageState extends State<EditingNotePage> {
   }
 
   // adding a new note
-  void addNewNote(int id) {
+  void addNewNote() {
+    // get new id
+    int id = Provider.of<NoteData>(context, listen: false).getAllNotes().length;
+
     // get text from the editor
     String text = _controller.document.toPlainText();
 
@@ -55,17 +56,42 @@ class _EditingNotePageState extends State<EditingNotePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            // if it's a new note
+            if (widget.isNewNote && !_controller.document.isEmpty()) {
+              addNewNote();
+            }
+
+            // if it's an existing note
+            else {
+              updateNote();
+            }
+          },
+        ),
+      ),
       body: Column(
         children: [
           // toolbar
           QuillToolbar.basic(
             controller: _controller,
+            showAlignmentButtons: false,
+            showBackgroundColorButton: false,
+            showCenterAlignment: false,
+            showColorButton: false,
+            showCodeBlock: false,
           ),
 
           // editor
           Expanded(
             child: Container(
-              color: Colors.amber,
+              padding: const EdgeInsets.all(25),
+              child: QuillEditor.basic(
+                controller: _controller,
+                readOnly: false,
+              ),
             ),
           )
         ],
