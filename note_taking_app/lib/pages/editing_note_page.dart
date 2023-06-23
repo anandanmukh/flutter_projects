@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_quill/flutter_quill.dart';
 import 'package:provider/provider.dart';
@@ -56,7 +57,10 @@ class _EditingNotePageState extends State<EditingNotePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: CupertinoColors.systemGroupedBackground,
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
@@ -69,6 +73,8 @@ class _EditingNotePageState extends State<EditingNotePage> {
             else {
               updateNote();
             }
+
+            Navigator.pop(context);
           },
         ),
       ),
